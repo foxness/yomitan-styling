@@ -1,5 +1,5 @@
 
-/* =============== FREQENCY DICTS =============== */
+/* =============== FREQUENCY DICTS =============== */
 
 .tag[data-category=frequency] {
     --tag-color: grey;
@@ -210,9 +210,9 @@ body {
     content: " ";
 }
 
-span.frequency-group-item:nth-child(n+4) {
+/* span.frequency-group-item:nth-child(n+4) {
     display: none;
-}
+} */
 
 /* =============== DICT: EN =============== */
 

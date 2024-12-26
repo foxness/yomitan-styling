@@ -1,0 +1,269 @@
+/* ========== BRIGHTER DEFINITONS ========== */
+
+/* .definition-item[data-dictionary="EN"] {
+    background-color: rgba(62, 83, 244, 0.2) !important;
+}
+
+.definition-item[data-dictionary="日本語文法辞典(全集)"] {
+    background-color: rgba(10, 211, 255, 0.2) !important;
+}
+
+.definition-item[data-dictionary="RU"] {
+    background-color: rgba(240, 61, 61, 0.2) !important;
+}
+
+.definition-item[data-dictionary="ENe"] {
+    background-color: rgba(107, 212, 37, 0.2) !important;
+} */
+
+/* =============== COLORS =============== */
+
+.tag[data-category=frequency] {
+    --tag-color: grey;
+}
+
+.frequency-group-item[data-details="JP"]>.tag {
+    --tag-color: #F1A208;
+    --tag-text-color: black;
+}
+
+.frequency-group-item[data-details="InRa"]>.tag {
+    --tag-color: #A4BEF3;
+    --tag-text-color: black;
+}
+
+.frequency-group-item[data-details="JLPT"]>.tag {
+    --tag-color: #FF8360;
+    --tag-text-color: black;
+}
+
+.frequency-group-item[data-details="CC100"]>.tag {
+    /* --tag-color: #97EAD2;
+    --tag-text-color: black; */
+
+    --tag-color: #6E5CC4;
+    --tag-text-color: white;
+}
+
+.frequency-group-item[data-details="BCCWJ"]>.tag, .frequency-group-item[data-details="Narou"]>.tag {
+    --tag-color: #758E4F;
+}
+
+.frequency-group-item[data-details="VN"]>.tag {
+    --tag-color: #E7F9A9;
+    --tag-text-color: black;
+}
+
+.frequency-group-item[data-details="BCW"]>.tag {
+    --tag-color: #587B7F;
+    --tag-text-color: white;
+}
+
+.definition-item[data-dictionary="EN"] {
+    background-color: rgba(62, 83, 244, 0.1);
+}
+
+.tag[data-details^="EN"] {
+    --tag-color: #4056F4;
+    /* #3737F0 */
+}
+
+.definition-item[data-dictionary="日本語文法辞典(全集)"] {
+    background-color: rgba(10, 211, 255, 0.08);
+}
+
+.tag[data-details="日本語文法辞典(全集)"] {
+    --tag-color: #0AD3FF;
+    --tag-text-color: black;
+}
+
+.definition-item[data-dictionary="RU"] {
+    background-color: rgba(240, 61, 61, 0.1);
+}
+
+.tag[data-details^="RU"] {
+    --tag-color: #f03d3d;
+    /* #EC2B2B */
+}
+
+.definition-item[data-dictionary="ENe"] {
+    background-color: rgba(107, 212, 37, 0.08);
+}
+
+.tag[data-details^="ENe"] {
+    --tag-color: #6BD425;
+    --tag-text-color: black;
+}
+
+.tag[data-details="アクセント辞典"] {
+    /* --tag-color: #6E5CC4;
+    --tag-text-color: white; */
+
+    /* #97EAD2 aquamarine #37E3B2 */
+    --tag-color: #97EAD2;
+    --tag-text-color: black;
+}
+
+/* =============== CUSTOM =============== */
+
+body {
+    font-family: system-ui;
+    /* --font-family: system-ui; */
+}
+
+.headword {
+    font-family: "Noto Sans JP", system-ui;
+    font-size: 110%;
+}
+
+.headword ruby rt {
+    color: aquamarine;
+}
+
+.pronunciation-text {
+    font-family: "Noto Sans JP", system-ui;
+    font-size: 130%;
+}
+
+.pronunciation-downstep-notation {
+    margin-left: 0.2em;
+    /* color: #7190be; */
+    color: rgba(55, 227, 178, 0.8);
+    font-weight: bold;
+}
+
+.pronunciation:nth-child(n+2) {
+    margin-left: 0.2em;
+}
+
+.headword-list-tag-list .tag {
+    margin: 2.5px;
+    margin-top: 6px;
+}
+
+.headword-list-tag-list .tag:first-child {
+    margin-left: 1em;
+}
+
+.headword-list-tag-list .tag .tag-label {
+    /* --tag-color: #4B6F56; */
+    --tag-color: #516757c7;
+}
+
+.headword-list-tag-list {
+    margin-left: -2.5px;
+}
+
+.entry-body-section {
+    margin: 4px 0;
+}
+
+.frequency-group-list {
+    margin-left: -2.5px;
+}
+
+.frequency-group-item .tag {
+    margin: 2.5px;
+}
+
+.inflection {
+    font-weight: bold;
+}
+
+.inflection::before {
+    font-weight: normal;
+}
+
+.inflection-list>.inflection+.inflection-separator+.inflection::before {
+    content: "|";
+}
+
+.definition-list {
+    padding: 0;
+}
+
+.definition-tag-list {
+    float: left;
+    line-height: 1;
+    height: 1em;
+    margin-top: -2px;
+}
+
+.definition-item {
+    display: inline-block;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    margin: 0 calc(0px - var(--entry-horizontal-padding));
+    width: 100%;
+    padding: 4px calc(var(--entry-horizontal-padding)) 4px calc(var(--entry-horizontal-padding));
+}
+
+.gloss-content {
+    line-height: 1.05;
+}
+
+.gloss-content br {
+    display: block;
+    margin: 4px;
+    content: " ";
+}
+
+span.frequency-group-item:nth-child(n+4) {
+    display: none;
+}
+
+/* =============== DICT: EN =============== */
+
+.definition-item[data-dictionary="EN"] {
+    filter: blur(0.3em);
+}
+
+.definition-item[data-dictionary="EN"]:hover {
+    filter: none;
+}
+
+/* =============== DICT: RU =============== */
+
+.definition-item[data-dictionary="RU"] {
+    filter: blur(0.3em);
+}
+
+.definition-item[data-dictionary="RU"]:hover {
+    filter: none;
+}
+
+/* =============== DICT: 三省堂 =============== */
+
+.tag[data-details^="三省堂国語辞典　第八版"] {
+    --tag-color: rgb(110, 92, 196);
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] {
+    background-color: rgba(110, 92, 196, 0.1);
+    font-size: 120%;
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="見出部"], .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="子見出部"] {
+    color: #c6baff;
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-content > .gloss-sc-div:first-of-type {
+    padding-top: 0.4em;
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-content > .gloss-sc-div:last-of-type {
+    padding-bottom: 0.4em;
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="語義"]:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div:not(:last-child) {
+    margin-bottom: 0.5em;
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="語義番号"] {
+    margin-right: 0.3em;
+    color: #8d76ff;
+}

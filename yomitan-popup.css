@@ -1,22 +1,5 @@
-/* ========== BRIGHTER DEFINITONS ========== */
 
-/* .definition-item[data-dictionary="EN"] {
-    background-color: rgba(62, 83, 244, 0.2) !important;
-}
-
-.definition-item[data-dictionary="日本語文法辞典(全集)"] {
-    background-color: rgba(10, 211, 255, 0.2) !important;
-}
-
-.definition-item[data-dictionary="RU"] {
-    background-color: rgba(240, 61, 61, 0.2) !important;
-}
-
-.definition-item[data-dictionary="ENe"] {
-    background-color: rgba(107, 212, 37, 0.2) !important;
-} */
-
-/* =============== COLORS =============== */
+/* =============== FREQENCY DICTS =============== */
 
 .tag[data-category=frequency] {
     --tag-color: grey;
@@ -28,36 +11,64 @@
 }
 
 .frequency-group-item[data-details="InRa"]>.tag {
-    --tag-color: #A4BEF3;
+    --tag-color: #E7F9A9;
     --tag-text-color: black;
 }
 
-.frequency-group-item[data-details="JLPT"]>.tag {
+/* .frequency-group-item[data-details="JLPT"]>.tag {
     --tag-color: #FF8360;
     --tag-text-color: black;
-}
+} */
 
 .frequency-group-item[data-details="CC100"]>.tag {
     /* --tag-color: #97EAD2;
     --tag-text-color: black; */
 
-    --tag-color: #6E5CC4;
-    --tag-text-color: white;
+    --tag-color: #A4BEF3;
+    --tag-text-color: black;
+
+    /* --tag-color: #6E5CC4;
+    --tag-text-color: white; */
 }
 
-.frequency-group-item[data-details="BCCWJ"]>.tag, .frequency-group-item[data-details="Narou"]>.tag {
+.frequency-group-item[data-details="BCCWJ"]>.tag,
+.frequency-group-item[data-details="Narou"]>.tag {
     --tag-color: #758E4F;
 }
 
-.frequency-group-item[data-details="VN"]>.tag {
+/* .frequency-group-item[data-details="VN"]>.tag {
     --tag-color: #E7F9A9;
     --tag-text-color: black;
-}
+} */
 
 .frequency-group-item[data-details="BCW"]>.tag {
     --tag-color: #587B7F;
     --tag-text-color: white;
 }
+
+/* =============== PITCH DICTS =============== */
+
+.tag[data-details="大辞泉"] {
+    /* --tag-color: #97EAD2;
+    --tag-text-color: black; */
+
+    --tag-color: #5d6786;
+    --tag-text-color: white;
+}
+
+.tag[data-details="アクセント辞典"] {
+    /* --tag-color: #6E5CC4;
+    --tag-text-color: white; */
+
+    /* #97EAD2 aquamarine #37E3B2 */
+    /* --tag-color: #97EAD2;
+    --tag-text-color: black; */
+
+    --tag-color: #587B7F;
+    --tag-text-color: white;
+}
+
+/* =============== REGULAR DICTS =============== */
 
 .definition-item[data-dictionary="EN"] {
     background-color: rgba(62, 83, 244, 0.1);
@@ -92,15 +103,6 @@
 
 .tag[data-details^="ENe"] {
     --tag-color: #6BD425;
-    --tag-text-color: black;
-}
-
-.tag[data-details="アクセント辞典"] {
-    /* --tag-color: #6E5CC4;
-    --tag-text-color: white; */
-
-    /* #97EAD2 aquamarine #37E3B2 */
-    --tag-color: #97EAD2;
     --tag-text-color: black;
 }
 

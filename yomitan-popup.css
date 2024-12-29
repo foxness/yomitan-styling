@@ -216,21 +216,22 @@ body {
 
 /* =============== DICT: EN =============== */
 
-.definition-item[data-dictionary="EN"] {
+/* dont blur the eng definition if there's no japanese definition */
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"]) .definition-item[data-dictionary="EN"] {
     filter: blur(0.3em);
 }
 
-.definition-item[data-dictionary="EN"]:hover {
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"]) .definition-item[data-dictionary="EN"]:hover {
     filter: none;
 }
 
 /* =============== DICT: RU =============== */
 
-.definition-item[data-dictionary="RU"] {
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"]) .definition-item[data-dictionary="RU"] {
     filter: blur(0.3em);
 }
 
-.definition-item[data-dictionary="RU"]:hover {
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"]) .definition-item[data-dictionary="RU"]:hover {
     filter: none;
 }
 

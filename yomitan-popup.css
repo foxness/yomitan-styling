@@ -216,22 +216,34 @@ body {
 
 /* =============== DICT: EN =============== */
 
-/* dont blur the eng definition if there's no japanese definition */
-.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"]) .definition-item[data-dictionary="EN"] {
+/* blur EN/RU definitions */
+
+/* dont blur if hovering over EN/RU definitions */
+/* also dont blur EN/RU definitions if there's no JP definition */
+
+.entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"])
+.definition-item[data-dictionary="EN"] {
     filter: blur(0.3em);
 }
 
-.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"]) .definition-item[data-dictionary="EN"]:hover {
+.entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"])
+.definition-item[data-dictionary="EN"]:hover {
     filter: none;
 }
 
 /* =============== DICT: RU =============== */
 
-.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"]) .definition-item[data-dictionary="RU"] {
+.entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"])
+.definition-item[data-dictionary="RU"] {
     filter: blur(0.3em);
 }
 
-.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"]) .definition-item[data-dictionary="RU"]:hover {
+.entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"])
+.definition-item[data-dictionary="RU"]:hover {
     filter: none;
 }
 

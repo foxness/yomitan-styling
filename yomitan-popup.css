@@ -242,10 +242,23 @@ body {
     font-size: 120%;
 }
 
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="homophone"] {
+    margin-right: 0.3em;
+}
+
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="見出部"], .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="子見出部"] {
     font-size: 110%;
     color: #c6baff;
 }
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="品詞G"] {
+    font-size: 90%;
+    color: #6e5cc4;
+}
+
+/* .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="語釈"] {
+    color: white;
+} */
 
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-content > .gloss-sc-div:first-of-type {
     padding-top: 0.4em;
@@ -270,26 +283,35 @@ body {
 }
 
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="用例G"] {
-    margin-left: 1em;
+    margin-left: 1.1em;
     font-size: 92%;
     color: #8676e0;
 }
 
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="対義語G"] {
-    margin-left: 1em;
+    margin-left: 1.1em;
+    color: #9d95c2;
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="共通"],
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="自動詞形G"],
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="可能形G"] {
     color: #9d95c2;
 }
 
 /* =============== PITCH =============== */
 
+.pronunciation-group-list {
+    padding-left: 0.7em !important;
+}
+
 li.pronunciation-group {
-    margin-left: -0.5em;
     list-style-type: none;
 }
 
 .pronunciation-text-container {
     font-family: "Noto Sans JP", system-ui;
-    font-size: 120%;
+    font-size: 110%;
 }
 
 .pronunciation-downstep-notation {

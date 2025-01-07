@@ -122,22 +122,6 @@ body {
     color: aquamarine;
 }
 
-.pronunciation-text {
-    font-family: "Noto Sans JP", system-ui;
-    font-size: 130%;
-}
-
-.pronunciation-downstep-notation {
-    margin-left: 0.2em;
-    /* color: #7190be; */
-    color: rgba(55, 227, 178, 0.8);
-    font-weight: bold;
-}
-
-.pronunciation:nth-child(n+2) {
-    margin-left: 0.2em;
-}
-
 .headword-list-tag-list .tag {
     margin: 2.5px;
     margin-top: 6px;
@@ -250,7 +234,7 @@ body {
 /* =============== DICT: 三省堂 =============== */
 
 .tag[data-details^="三省堂国語辞典　第八版"] {
-    --tag-color: rgb(110, 92, 196);
+    --tag-color: #6e5cc4;
 }
 
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] {
@@ -259,6 +243,7 @@ body {
 }
 
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="見出部"], .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="子見出部"] {
+    font-size: 110%;
     color: #c6baff;
 }
 
@@ -281,16 +266,41 @@ body {
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="語義番号"] {
     margin-right: 0.3em;
     font-size: 120%;
-    color: #8d76ff;
+    color: #bf87ff;
 }
 
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="用例G"] {
-    font-size: 90%;
-    color: #ba86f5;
+    margin-left: 1em;
+    font-size: 92%;
+    color: #8676e0;
 }
 
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="対義語G"] {
+    margin-left: 1em;
     color: #9d95c2;
+}
+
+/* =============== PITCH =============== */
+
+li.pronunciation-group {
+    margin-left: -0.5em;
+    list-style-type: none;
+}
+
+.pronunciation-text-container {
+    font-family: "Noto Sans JP", system-ui;
+    font-size: 120%;
+}
+
+.pronunciation-downstep-notation {
+    margin-left: 0.2em;
+    /* color: #7190be; */
+    color: rgba(55, 227, 178, 0.8);
+    font-weight: bold;
+}
+
+.pronunciation:nth-child(n+2) {
+    margin-left: 0.2em;
 }
 
 /* =============== KANJI DICTS =============== */

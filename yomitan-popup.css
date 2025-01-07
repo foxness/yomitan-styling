@@ -280,7 +280,17 @@ body {
 
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="語義番号"] {
     margin-right: 0.3em;
+    font-size: 120%;
     color: #8d76ff;
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="用例G"] {
+    font-size: 90%;
+    color: #ba86f5;
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="対義語G"] {
+    color: #9d95c2;
 }
 
 /* =============== KANJI DICTS =============== */

@@ -247,8 +247,15 @@ body {
     margin-right: 0.3em;
 }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="見出部"], .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="子見出部"] {
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="見出部"],
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="子見出部"] {
     font-size: 110%;
+    color: #c6baff;
+}
+
+/* word: 面 */
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="見出部要素"] {
+    font-size: 120%;
     color: #c6baff;
 }
 
@@ -289,6 +296,7 @@ body {
     color: #8676e0;
 }
 
+/* word: 面 */
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="対義語G"] {
     margin-left: 1.1em;
 }

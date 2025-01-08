@@ -299,6 +299,10 @@ body {
     color: #9d95c2;
 }
 
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="使用域G"] {
+    color: #9d95c2;
+}
+
 /* =============== PITCH =============== */
 
 .pronunciation-group-list {

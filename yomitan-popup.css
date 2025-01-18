@@ -1,5 +1,5 @@
 
-/* =============== FREQUENCY DICTS =============== */
+/* =============== FREQUENCY DICT COLORS =============== */
 
 .tag[data-category=frequency] {
     --tag-color: grey;
@@ -33,44 +33,7 @@
     --tag-text-color: white;
 }
 
-/* =============== FREQUENCY BOLD SIGNIFICANT DIGITS =============== */
-
-@font-face {
-    font-family: "noka-mono"; /* font with zero-width "㋕" */
-    src: local("noka-comma");
-    unicode-range: U+32d5;
-}
-
-.frequency-value {
-    font-family: 'noka-mono', 'Courier New', monospace;
-    position: relative;
-    display: inline-block;
-    transform: translateY(0.27em);
-    font-weight: 400;
-    white-space: pre;
-    overflow: hidden;
-    line-height: 126%;
-}
-
-.frequency-value::before {
-    display: block;
-    position: absolute;
-    z-index: 2;
-    top: 0;
-    left: 0;
-
-    content: attr(data-frequency);
-    width: calc(100% - 25px);
-    overflow: hidden;
-
-    background-color: var(--background-color);
-    color: var(--tag-color);
-
-    font-family: 'noka-mono', 'Courier New', monospace;
-    font-weight: 900;
-}
-
-/* =============== PITCH DICTS =============== */
+/* =============== PITCH DICT COLORS =============== */
 
 .tag[data-details="大辞泉"] {
     /* --tag-color: #97EAD2;
@@ -92,33 +55,15 @@
     --tag-text-color: white;
 }
 
-/* =============== REGULAR DICTS =============== */
+/* =============== REGULAR DICT COLORS =============== */
 
-.definition-item[data-dictionary="EN"] {
-    background-color: rgba(62, 83, 244, 0.1);
-}
-
-.tag[data-details^="EN"] {
-    --tag-color: #4056F4;
-    /* #3737F0 */
-}
-
-.definition-item[data-dictionary="日本語文法辞典(全集)"] {
+/* .definition-item[data-dictionary="日本語文法辞典(全集)"] {
     background-color: rgba(10, 211, 255, 0.08);
 }
 
 .tag[data-details="日本語文法辞典(全集)"] {
     --tag-color: #0AD3FF;
     --tag-text-color: black;
-}
-
-.definition-item[data-dictionary="RU"] {
-    background-color: rgba(240, 61, 61, 0.1);
-}
-
-.tag[data-details^="RU"] {
-    --tag-color: #f03d3d;
-    /* #EC2B2B */
 }
 
 .definition-item[data-dictionary="ENe"] {
@@ -128,9 +73,9 @@
 .tag[data-details^="ENe"] {
     --tag-color: #6BD425;
     --tag-text-color: black;
-}
+} */
 
-/* =============== CUSTOM =============== */
+/* =============== GENERAL =============== */
 
 body {
     font-family: system-ui;
@@ -168,6 +113,8 @@ body {
     margin: 4px 0;
 }
 
+/* =============== FREQUENCIES =============== */
+
 .frequency-group-list {
     margin-left: -2.5px;
 }
@@ -175,6 +122,12 @@ body {
 .frequency-group-item .tag {
     margin: 2.5px;
 }
+
+/* span.frequency-group-item:nth-child(n+4) {
+    display: none;
+} */
+
+/* =============== INFLECTIONS =============== */
 
 .inflection {
     font-weight: bold;
@@ -187,6 +140,8 @@ body {
 .inflection-list>.inflection+.inflection-separator+.inflection::before {
     content: "|";
 }
+
+/* =============== DEFINITIONS =============== */
 
 .definition-list {
     padding: 0;
@@ -202,10 +157,12 @@ body {
 .definition-item {
     display: inline-block;
     margin-bottom: 10px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
     margin: 0 calc(0px - var(--entry-horizontal-padding));
     width: 100%;
     padding: 4px calc(var(--entry-horizontal-padding)) 4px calc(var(--entry-horizontal-padding));
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-top: 0.14rem solid var(--dict-color);
 }
 
 .gloss-content {
@@ -218,11 +175,16 @@ body {
     content: " ";
 }
 
-/* span.frequency-group-item:nth-child(n+4) {
-    display: none;
-} */
-
 /* =============== DICT: EN =============== */
+
+.definition-item[data-dictionary="EN"] {
+    background-color: rgba(62, 83, 244, 0.1);
+}
+
+.tag[data-details^="EN"] {
+    --tag-color: #4056F4;
+    /* #3737F0 */
+}
 
 /* blur EN/RU definitions */
 
@@ -243,6 +205,15 @@ body {
 
 /* =============== DICT: RU =============== */
 
+.definition-item[data-dictionary="RU"] {
+    background-color: rgba(240, 61, 61, 0.1);
+}
+
+.tag[data-details^="RU"] {
+    --tag-color: #f03d3d;
+    /* #EC2B2B */
+}
+
 .entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
 .entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"])
 .definition-item[data-dictionary="RU"] {
@@ -257,14 +228,16 @@ body {
 
 /* =============== DICT: 三省堂 =============== */
 
-.tag[data-details^="三省堂国語辞典　第八版"] {
-    --tag-color: #6e5cc4;
-}
-
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] {
+    --dict-color: #6e5cc4;
+
     background-color: rgba(110, 92, 196, 0.1);
     font-size: 120%;
     color: #9d95c2;
+}
+
+.tag[data-details^="三省堂国語辞典　第八版"] {
+    --tag-color: var(--dict-color);
 }
 
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="homophone"] {
@@ -433,4 +406,41 @@ div#dictionary-entries>div.entry:nth-child(n + 2) .kanji-glyph-data>tbody>tr>* {
 /* change decimal list */
 .kanji-gloss-list {
     list-style-type: circle;
+}
+
+/* =============== FREQUENCY BOLD SIGNIFICANT DIGITS =============== */
+
+@font-face {
+    font-family: "noka-mono"; /* font with zero-width "㋕" */
+    src: local("noka-comma");
+    unicode-range: U+32d5;
+}
+
+.frequency-value {
+    font-family: 'noka-mono', 'Courier New', monospace;
+    position: relative;
+    display: inline-block;
+    transform: translateY(0.27em);
+    font-weight: 400;
+    white-space: pre;
+    overflow: hidden;
+    line-height: 126%;
+}
+
+.frequency-value::before {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+
+    content: attr(data-frequency);
+    width: calc(100% - 25px);
+    overflow: hidden;
+
+    background-color: var(--background-color);
+    color: var(--tag-color);
+
+    font-family: 'noka-mono', 'Courier New', monospace;
+    font-weight: 900;
 }

@@ -50,12 +50,15 @@
     font-family: 'noka-mono', 'Courier New', monospace;
     position: relative;
     display: inline-block;
-    transform: translateY(px);
+    transform: translateY(0.27em);
     font-weight: 400;
     /* color: #778; */
     white-space: pre;
     /* margin-right: 7px; */
     /* margin-left: -2px; */
+    overflow: hidden;
+    /* height: calc(100% - 20px); */
+    line-height: 126%;
 }
 
 /* .tag {
@@ -66,13 +69,13 @@
     margin-right: 6px;
 } */
 
-.frequency-disambiguation-reading, .frequency-disambiguation-term, .frequency-disambiguation-separator::before {
+/* .frequency-disambiguation-reading, .frequency-disambiguation-term, .frequency-disambiguation-separator::before {
     font-family: 'noka-mono', 'Courier New', monospace;
     position: relative;
     display: inline-block;
     margin-left: -5px;
     margin-right: 9px;
-}
+} */
 
 /* .frequency-value::after {
     content: '';
@@ -82,20 +85,21 @@
 } */
 
 .frequency-value::before {
-    font-family: 'noka-mono', 'Courier New', monospace;
-    font-weight: 900;
     display: block;
     position: absolute;
     z-index: 2;
     top: 0;
     left: 0;
+
     content: attr(data-frequency);
     width: calc(100% - 25px);
-    background-color: var(--background-color);
-    
-    height: calc(100% - 1px);
     overflow: hidden;
+
+    background-color: var(--background-color);
     color: var(--tag-color);
+
+    font-family: 'noka-mono', 'Courier New', monospace;
+    font-weight: 900;
 }
 
 /* =============== PITCH DICTS =============== */

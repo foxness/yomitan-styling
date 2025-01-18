@@ -168,10 +168,6 @@ body {
     border-top: 0.14rem solid color-mix(in srgb, var(--dict-color) 50%, transparent);
 }
 
-.gloss-content {
-    line-height: 1.05;
-}
-
 .gloss-content br {
     display: block;
     margin: 4px;
@@ -188,6 +184,10 @@ body {
 
 .tag[data-details^="EN"] {
     --tag-color: var(--dict-color);
+}
+
+.definition-item[data-dictionary="EN"] .gloss-content {
+    line-height: 1.05;
 }
 
 /* blur EN/RU definitions */
@@ -219,6 +219,10 @@ body {
     --tag-color: var(--dict-color);
 }
 
+.definition-item[data-dictionary="RU"] .gloss-content {
+    line-height: 1.05;
+}
+
 .entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
 .entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"])
 .definition-item[data-dictionary="RU"] {
@@ -243,6 +247,10 @@ body {
 
 .tag[data-details^="三省堂国語辞典　第八版"] {
     --tag-color: var(--dict-color);
+}
+
+.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-content {
+    line-height: 110%;
 }
 
 .definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="homophone"] {

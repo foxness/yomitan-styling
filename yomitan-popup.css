@@ -35,13 +35,8 @@
 
 /* =============== FREQUENCY BOLD SIGNIFICANT DIGITS =============== */
 
-.frequency-group-list {
-    margin-top: -2px;
-    margin-bottom: 2px;
-}
-
 @font-face {
-    font-family: "noka-mono";
+    font-family: "noka-mono"; /* font with zero-width "㋕" */
     src: local("noka-comma");
     unicode-range: U+32d5;
 }
@@ -52,37 +47,10 @@
     display: inline-block;
     transform: translateY(0.27em);
     font-weight: 400;
-    /* color: #778; */
     white-space: pre;
-    /* margin-right: 7px; */
-    /* margin-left: -2px; */
     overflow: hidden;
-    /* height: calc(100% - 20px); */
     line-height: 126%;
 }
-
-/* .tag {
-    margin-right: -5px;
-} */
-
-/* .tag-label {
-    margin-right: 6px;
-} */
-
-/* .frequency-disambiguation-reading, .frequency-disambiguation-term, .frequency-disambiguation-separator::before {
-    font-family: 'noka-mono', 'Courier New', monospace;
-    position: relative;
-    display: inline-block;
-    margin-left: -5px;
-    margin-right: 9px;
-} */
-
-/* .frequency-value::after {
-    content: '';
-    z-index: -2;
-    margin-right: -6px;
-    width: 0px;
-} */
 
 .frequency-value::before {
     display: block;

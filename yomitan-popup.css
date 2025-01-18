@@ -15,9 +15,13 @@
     --tag-text-color: black;
 }
 
-.frequency-group-item[data-details="CC100"] :is(.tag, .frequency-value) {
+.frequency-group-item[data-details="CC100"] :is(.tag) {
     --tag-color: #A4BEF3;
     --tag-text-color: black;
+}
+
+.frequency-group-item[data-details="CC100"] :is(.frequency-value) {
+    --tag-color: #79a6ff;
 }
 
 .frequency-group-item[data-details="BCCWJ"] :is(.tag) {
@@ -25,7 +29,7 @@
 }
 
 .frequency-group-item[data-details="BCCWJ"] :is(.frequency-value) {
-    --tag-color: #a7ce6c;
+    --tag-color: #a6d165;
 }
 
 .frequency-group-item[data-details="BCW"] :is(.tag, .frequency-value) {

@@ -437,7 +437,9 @@ div#dictionary-entries>div.entry:nth-child(n + 2) .kanji-glyph-data>tbody>tr>* {
     unicode-range: U+32d5;
 }
 
-.frequency-value {
+/* ========== DONT SHOW KANA SYMBOL ========== */
+
+/* .frequency-value {
     font-family: 'noka-mono', 'Courier New', monospace;
     position: relative;
     display: inline-block;
@@ -464,4 +466,32 @@ div#dictionary-entries>div.entry:nth-child(n + 2) .kanji-glyph-data>tbody>tr>* {
 
     font-family: 'noka-mono', 'Courier New', monospace;
     font-weight: 900;
+} */
+
+/* ========== SHOW KANA SYMBOL ========== */
+
+.frequency-value {
+    font-family: 'noka-mono', 'Courier New', monospace;
+    position: relative;
+    display: inline-block;
+    transform: translateY(px);
+    font-weight: 400;
+    white-space: pre;
+}
+
+.frequency-value::before {
+    font-family: 'noka-mono', 'Courier New', monospace;
+    font-weight: 900;
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    content: attr(data-frequency);
+    width: calc(100% - 25px);
+    background-color: var(--background-color);
+    
+    height: calc(100% - 1px);
+    overflow: hidden;
+    color: var(--tag-color);
 }

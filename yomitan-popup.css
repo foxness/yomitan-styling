@@ -1,7 +1,7 @@
 
 /* =============== FREQUENCY DICT COLORS =============== */
 
-.tag[data-category=frequency] {
+.tag[data-category='frequency'] {
     --tag-color: grey;
 }
 
@@ -162,7 +162,10 @@ body {
     padding: 4px calc(var(--entry-horizontal-padding)) 4px calc(var(--entry-horizontal-padding));
 
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-    border-top: 0.14rem solid var(--dict-color);
+}
+
+.definition-item:has(.tag[data-category='dictionary']:first-child) {
+    border-top: 0.14rem solid color-mix(in srgb, var(--dict-color) 50%, transparent);
 }
 
 .gloss-content {
@@ -178,12 +181,13 @@ body {
 /* =============== DICT: EN =============== */
 
 .definition-item[data-dictionary="EN"] {
+    --dict-color: #4056F4;
+
     background-color: rgba(62, 83, 244, 0.1);
 }
 
 .tag[data-details^="EN"] {
-    --tag-color: #4056F4;
-    /* #3737F0 */
+    --tag-color: var(--dict-color);
 }
 
 /* blur EN/RU definitions */
@@ -206,12 +210,13 @@ body {
 /* =============== DICT: RU =============== */
 
 .definition-item[data-dictionary="RU"] {
+    --dict-color: #f03d3d;
+
     background-color: rgba(240, 61, 61, 0.1);
 }
 
 .tag[data-details^="RU"] {
-    --tag-color: #f03d3d;
-    /* #EC2B2B */
+    --tag-color: var(--dict-color);
 }
 
 .entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
@@ -318,26 +323,30 @@ body {
 
 /* =============== DICT: 明鏡国語辞典　第二版 =============== */
 
-.tag[data-details^="明鏡国語辞典　第二版"] {
-    --tag-color: #5a65c4;
-}
-
 .definition-item[data-dictionary="明鏡国語辞典　第二版"] {
+    --dict-color: #5a65c4;
+
     background-color: rgba(90, 118, 196, 0.1);
     font-size: 120%;
     color: #d6daff;
 }
 
-/* =============== DICT: デジタル大辞泉 =============== */
-
-.tag[data-details^="デジタル大辞泉"] {
-    --tag-color: #5e5ac4;
+.tag[data-details^="明鏡国語辞典　第二版"] {
+    --tag-color: var(--dict-color);
 }
 
+/* =============== DICT: デジタル大辞泉 =============== */
+
 .definition-item[data-dictionary="デジタル大辞泉"] {
+    --dict-color: #5e5ac4;
+
     background-color: rgba(94, 90, 196, 0.1);
     font-size: 120%;
     color: #dcdbff;
+}
+
+.tag[data-details^="デジタル大辞泉"] {
+    --tag-color: var(--dict-color);
 }
 
 /* =============== PITCH =============== */

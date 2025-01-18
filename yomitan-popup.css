@@ -319,6 +319,18 @@ body {
     /* color: #9d95c2; */
 }
 
+/* =============== DICT: デジタル大辞泉 =============== */
+
+.tag[data-details^="デジタル大辞泉"] {
+    --tag-color: #5a65c4;
+}
+
+.definition-item[data-dictionary="デジタル大辞泉"] {
+    background-color: rgba(90, 118, 196, 0.1);
+    font-size: 120%;
+    color: #d6daff;
+}
+
 /* =============== PITCH =============== */
 
 .pronunciation-group-list {

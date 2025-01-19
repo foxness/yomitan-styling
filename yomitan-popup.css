@@ -200,13 +200,13 @@ body {
 /* also dont blur EN/RU definitions if there's no JP definition */
 
 .entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
-.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"])
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"], .tag[data-details^="明鏡国語辞典　第二版"], .tag[data-details^="デジタル大辞泉"])
 .definition-item[data-dictionary="EN"] {
     filter: blur(0.3em);
 }
 
 .entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
-.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"])
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"], .tag[data-details^="明鏡国語辞典　第二版"], .tag[data-details^="デジタル大辞泉"])
 .definition-item[data-dictionary="EN"]:hover {
     filter: none;
 }
@@ -228,13 +228,13 @@ body {
 }
 
 .entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
-.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"])
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"], .tag[data-details^="明鏡国語辞典　第二版"], .tag[data-details^="デジタル大辞泉"])
 .definition-item[data-dictionary="RU"] {
     filter: blur(0.3em);
 }
 
 .entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
-.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"])
+.entry-body-section[data-section-type="definitions"]:has(.tag[data-details^="三省堂国語辞典　第八版"], .tag[data-details^="明鏡国語辞典　第二版"], .tag[data-details^="デジタル大辞泉"])
 .definition-item[data-dictionary="RU"]:hover {
     filter: none;
 }

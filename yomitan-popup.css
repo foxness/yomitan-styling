@@ -495,3 +495,7 @@ div#dictionary-entries>div.entry:nth-child(n + 2) .kanji-glyph-data>tbody>tr>* {
     overflow: hidden;
     color: var(--tag-color);
 }
+
+.frequency-group-item > .tag > .tag-body {
+    overflow: hidden;
+}

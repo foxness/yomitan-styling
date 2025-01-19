@@ -184,14 +184,14 @@ body {
     --dict-color: #4056F4;
 
     background-color: rgba(62, 83, 244, 0.1);
-}
 
-.tag[data-details^="EN"] {
-    --tag-color: var(--dict-color);
-}
+    .tag[data-details^="EN"] {
+        --tag-color: var(--dict-color);
+    }
 
-.definition-item[data-dictionary="EN"] .gloss-content {
-    line-height: 1.05;
+    .gloss-content {
+        line-height: 1.05;
+    }
 }
 
 /* blur EN/RU definitions */
@@ -217,14 +217,14 @@ body {
     --dict-color: #f03d3d;
 
     background-color: rgba(240, 61, 61, 0.1);
-}
 
-.tag[data-details^="RU"] {
-    --tag-color: var(--dict-color);
-}
+    .tag[data-details^="RU"] {
+        --tag-color: var(--dict-color);
+    }
 
-.definition-item[data-dictionary="RU"] .gloss-content {
-    line-height: 1.05;
+    .gloss-content {
+        line-height: 1.05;
+    }
 }
 
 .entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
@@ -247,90 +247,90 @@ body {
     background-color: rgba(110, 92, 196, 0.1);
     font-size: 120%;
     color: #9d95c2;
-}
 
-.tag[data-details^="三省堂国語辞典　第八版"] {
-    --tag-color: var(--dict-color);
-}
+    .tag[data-details^="三省堂国語辞典　第八版"] {
+        --tag-color: var(--dict-color);
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-content {
-    line-height: 110%;
-}
+    .gloss-content {
+        line-height: 110%;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="homophone"] {
-    margin-right: 0.3em;
-}
+    .gloss-sc-span[data-sc-name="homophone"] {
+        margin-right: 0.3em;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="見出部"],
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="子見出部"] {
-    font-size: 110%;
-    color: #c6baff;
-}
+    .gloss-sc-span[data-sc-name="見出部"],
+    .gloss-sc-span[data-sc-name="子見出部"] {
+        font-size: 110%;
+        color: #c6baff;
+    }
 
-/* word: 面 */
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="見出部要素"] {
-    font-size: 120%;
-    color: #c6baff;
-}
+    /* word: 面 */
+    .gloss-sc-span[data-sc-name="見出部要素"] {
+        font-size: 120%;
+        color: #c6baff;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="品詞G"] {
-    font-size: 90%;
-    color: #6e5cc4;
-}
+    .gloss-sc-span[data-sc-name="品詞G"] {
+        font-size: 90%;
+        color: #6e5cc4;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="語釈"] {
-    color: white;
-}
+    .gloss-sc-span[data-sc-name="語釈"] {
+        color: white;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-content > .gloss-sc-div:first-of-type {
-    padding-top: 0.4em;
-}
+    .gloss-content > .gloss-sc-div:first-of-type {
+        padding-top: 0.4em;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-content > .gloss-sc-div:last-of-type {
-    padding-bottom: 0.4em;
-}
+    .gloss-content > .gloss-sc-div:last-of-type {
+        padding-bottom: 0.4em;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="語義"]:not(:last-child) {
-    margin-bottom: 0.5em;
-}
+    .gloss-sc-div[data-sc-name="語義"]:not(:last-child) {
+        margin-bottom: 0.5em;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div:not(:last-child) {
-    margin-bottom: 0.5em;
-}
+    .gloss-sc-div:not(:last-child) {
+        margin-bottom: 0.5em;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="語義番号"] {
-    margin-right: 0.3em;
-    font-size: 120%;
-    color: #bf87ff;
-}
+    .gloss-sc-span[data-sc-name="語義番号"] {
+        margin-right: 0.3em;
+        font-size: 120%;
+        color: #bf87ff;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="用例G"] {
-    margin-left: 1.1em;
-    font-size: 92%;
-    color: #8676e0;
-}
+    .gloss-sc-div[data-sc-name="用例G"] {
+        margin-left: 1.1em;
+        font-size: 92%;
+        color: #8676e0;
+    }
 
-/* word: 面 */
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="対義語G"] {
-    margin-left: 1.1em;
-}
+    /* word: 面 */
+    .gloss-sc-span[data-sc-name="対義語G"] {
+        margin-left: 1.1em;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="注記"] {
-    color: #d5cdff;
-}
+    .gloss-sc-span[data-sc-name="注記"] {
+        color: #d5cdff;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="ルビ"] {
-    color: #a19cb5;
-}
+    .gloss-sc-span[data-sc-name="ルビ"] {
+        color: #a19cb5;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="共通"],
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="自動詞形G"],
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-div[data-sc-name="可能形G"] {
-    /* color: #9d95c2; */
-}
+    /* .gloss-sc-div[data-sc-name="共通"],
+    .gloss-sc-div[data-sc-name="自動詞形G"],
+    .gloss-sc-div[data-sc-name="可能形G"] {
+        color: #9d95c2;
+    }
 
-.definition-item[data-dictionary="三省堂国語辞典　第八版"] .gloss-sc-span[data-sc-name="使用域G"] {
-    /* color: #9d95c2; */
+    .gloss-sc-span[data-sc-name="使用域G"] {
+        color: #9d95c2;
+    } */
 }
 
 /* =============== DICT: 明鏡国語辞典　第二版 =============== */
@@ -341,10 +341,10 @@ body {
     background-color: rgba(90, 118, 196, 0.1);
     font-size: 120%;
     color: #d6daff;
-}
 
-.tag[data-details^="明鏡国語辞典　第二版"] {
-    --tag-color: var(--dict-color);
+    .tag[data-details^="明鏡国語辞典　第二版"] {
+        --tag-color: var(--dict-color);
+    }
 }
 
 /* =============== DICT: デジタル大辞泉 =============== */
@@ -355,10 +355,10 @@ body {
     background-color: rgba(94, 90, 196, 0.1);
     font-size: 120%;
     color: #dcdbff;
-}
 
-.tag[data-details^="デジタル大辞泉"] {
-    --tag-color: var(--dict-color);
+    .tag[data-details^="デジタル大辞泉"] {
+        --tag-color: var(--dict-color);
+    }
 }
 
 /* =============== PITCH =============== */

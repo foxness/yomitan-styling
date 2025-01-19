@@ -488,7 +488,7 @@ div#dictionary-entries>div.entry:nth-child(n + 2) .kanji-glyph-data>tbody>tr>* {
     top: 0;
     left: 0;
     content: attr(data-frequency);
-    width: calc(100% - 25px);
+    width: calc(100% - 24px);
     background-color: var(--background-color);
     
     height: calc(100% - 1px);

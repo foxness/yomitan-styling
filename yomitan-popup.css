@@ -384,6 +384,27 @@ body {
     border-top: var(--small-border);
 }
 
+/* =============== DICT: 漢字ペディア同訓異義 =============== */
+
+.definition-item[data-dictionary="漢字ペディア同訓異義"] {
+    --dict-color: #53826a;
+
+    font-size: 120%;
+
+    background-color: color-mix(in oklab, var(--dict-color) 10%, transparent);
+    color: color-mix(in oklab, var(--dict-color) 20%, white);
+
+    .tag[data-details^="漢字ペディア同訓異義"] {
+        --tag-color: var(--dict-color);
+    }
+
+    th {
+        font-weight: inherit;
+        font-size: 140%;
+        line-height: 110%;
+    }
+}
+
 /* =============== PITCH =============== */
 
 .pronunciation-group-list {

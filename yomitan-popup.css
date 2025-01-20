@@ -166,7 +166,7 @@ body {
     padding: 4px calc(var(--entry-horizontal-padding)) 4px calc(var(--entry-horizontal-padding));
 
     --small-border: 1px solid rgba(255, 255, 255, 0.15);
-    --big-border: 0.14rem solid color-mix(in srgb, var(--dict-color) 50%, transparent);
+    --big-border: 0.14rem solid color-mix(in oklab, var(--dict-color) 50%, transparent);
 
     &:has(.tag[data-category='dictionary']) {
         border-top: var(--small-border);
@@ -353,11 +353,12 @@ body {
 /* =============== DICT: 明鏡国語辞典　第二版 =============== */
 
 .definition-item[data-dictionary="明鏡国語辞典　第二版"] {
-    --dict-color: #5a65c4;
+    --dict-color: #5a75c4;
 
-    background-color: rgba(90, 118, 196, 0.1);
     font-size: 120%;
-    color: #d6daff;
+
+    background-color: color-mix(in oklab, var(--dict-color) 10%, transparent);
+    color: color-mix(in oklab, var(--dict-color) 20%, white);
 
     .tag[data-details^="明鏡国語辞典　第二版"] {
         --tag-color: var(--dict-color);
@@ -367,11 +368,12 @@ body {
 /* =============== DICT: デジタル大辞泉 =============== */
 
 .definition-item[data-dictionary="デジタル大辞泉"] {
-    --dict-color: #5e5ac4;
+    --dict-color: #587B7F;
 
-    background-color: rgba(94, 90, 196, 0.1);
     font-size: 120%;
-    color: #dcdbff;
+
+    background-color: color-mix(in oklab, var(--dict-color) 10%, transparent);
+    color: color-mix(in oklab, var(--dict-color) 20%, white);
 
     .tag[data-details^="デジタル大辞泉"] {
         --tag-color: var(--dict-color);

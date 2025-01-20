@@ -165,11 +165,20 @@ body {
     width: 100%;
     padding: 4px calc(var(--entry-horizontal-padding)) 4px calc(var(--entry-horizontal-padding));
 
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
-}
+    --small-border: 1px solid rgba(255, 255, 255, 0.15);
+    --big-border: 0.14rem solid color-mix(in srgb, var(--dict-color) 50%, transparent);
 
-.definition-item:has(.tag[data-category='dictionary']:first-child) {
-    border-top: 0.14rem solid color-mix(in srgb, var(--dict-color) 50%, transparent);
+    &:has(.tag[data-category='dictionary']) {
+        border-top: var(--small-border);
+    }
+
+    &:has(.tag[data-category='dictionary']:first-child) {
+        border-top: var(--big-border);
+    }
+
+    &:last-child {
+        border-bottom: var(--small-border);
+    }
 }
 
 .gloss-content br {
@@ -192,6 +201,10 @@ body {
     .gloss-content {
         line-height: 1.05;
     }
+}
+
+:not(.definition-item[data-dictionary="EN"]) + .definition-item[data-dictionary="EN"] {
+    border-top: var(--big-border);
 }
 
 /* blur EN/RU definitions */
@@ -225,6 +238,10 @@ body {
     .gloss-content {
         line-height: 1.05;
     }
+}
+
+:not(.definition-item[data-dictionary="RU"]) + .definition-item[data-dictionary="RU"] {
+    border-top: var(--big-border);
 }
 
 .entry-body:not(:has(.definition-item[data-dictionary="EN"]:hover, .definition-item[data-dictionary="RU"]:hover))
@@ -359,6 +376,10 @@ body {
     .tag[data-details^="デジタル大辞泉"] {
         --tag-color: var(--dict-color);
     }
+}
+
+.definition-item[data-dictionary="デジタル大辞泉"] + .definition-item[data-dictionary="デジタル大辞泉"] {
+    border-top: var(--small-border);
 }
 
 /* =============== PITCH =============== */

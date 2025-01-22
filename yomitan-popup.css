@@ -37,41 +37,56 @@
     --tag-text-color: white;
 }
 
-span.frequency-group-tag:has(span[data-display-value="Student"]) {
-    --tag-color: #994450;
-}
+/* ========= TMW DICT ========= */
 
-span.frequency-group-tag:has(span[data-display-value="Trainee"]) {
-    --tag-color: #d85254;
-}
-
-span.frequency-group-tag:has(span[data-display-value="Debut Idol"]) {
-    --tag-color: #ff6a8f;
-}
-
-span.frequency-group-tag:has(span[data-display-value="Major Idol"]) {
-    --tag-color: #d275e1;
-}
-
-span.frequency-group-tag:has(span[data-display-value="Prima Idol"]) {
-    --tag-color: #876be0;
-}
-
-span.frequency-group-tag:has(span[data-display-value="Divine Idol"]) {
-    --tag-color: #4b54d9;
-}
-
-span.frequency-group-tag:has(span[data-display-value="Eternal Idol"]) {
-    --tag-color: #4188e7;
+span.frequency-group-tag:has(span[data-display-value="Owner"]) {
+    --tag-color: #F8DBA6;
+    --tag-text-color: black;
 }
 
 span.frequency-group-tag:has(span[data-display-value="Immortal Idol"]) {
     --tag-color: #53D9AF;
+    --tag-text-color: black;
 }
 
-span.frequency-group-tag:has(span[data-display-value="Owner"]) {
-    --tag-color: #F8DBA6;
+span.frequency-group-tag:has(span[data-display-value="Eternal Idol"]) {
+    --tag-color: #4188e7;
+    --tag-text-color: white;
 }
+
+span.frequency-group-tag:has(span[data-display-value="Divine Idol"]) {
+    --tag-color: #4b54d9;
+    --tag-text-color: white;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Prima Idol"]) {
+    --tag-color: #876be0;
+    --tag-text-color: white;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Major Idol"]) {
+    --tag-color: #d275e1;
+    --tag-text-color: black;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Debut Idol"]) {
+    --tag-color: #ff6a8f;
+    --tag-text-color: black;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Trainee"]) {
+    --tag-color: #d85254;
+    --tag-text-color: white;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Student"]) {
+    --tag-color: #994450;
+    --tag-text-color: white;
+}
+
+/* .frequency-item[data-dictionary='TMW'] .frequency-value:nth-child(n+2) {
+    display: none;
+} */
 
 /* =============== PITCH DICT COLORS =============== */
 

@@ -37,6 +37,42 @@
     --tag-text-color: white;
 }
 
+span.frequency-group-tag:has(span[data-display-value="Student"]) {
+    --tag-color: #994450;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Trainee"]) {
+    --tag-color: #d85254;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Debut Idol"]) {
+    --tag-color: #ff6a8f;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Major Idol"]) {
+    --tag-color: #d275e1;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Prima Idol"]) {
+    --tag-color: #876be0;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Divine Idol"]) {
+    --tag-color: #4b54d9;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Eternal Idol"]) {
+    --tag-color: #4188e7;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Immortal Idol"]) {
+    --tag-color: #53D9AF;
+}
+
+span.frequency-group-tag:has(span[data-display-value="Owner"]) {
+    --tag-color: #F8DBA6;
+}
+
 /* =============== PITCH DICT COLORS =============== */
 
 .tag[data-details="大辞泉"] {
@@ -492,7 +528,7 @@ div#dictionary-entries>div.entry:nth-child(n + 2) .kanji-glyph-data>tbody>tr>* {
 
 /* ========== DONT SHOW KANA SYMBOL ========== */
 
-/* .frequency-value {
+/* .frequency-item:not([data-dictionary='TMW']) .frequency-value {
     font-family: 'noka-mono', 'Courier New', monospace;
     position: relative;
     display: inline-block;
@@ -503,7 +539,7 @@ div#dictionary-entries>div.entry:nth-child(n + 2) .kanji-glyph-data>tbody>tr>* {
     line-height: 126%;
 }
 
-.frequency-value::before {
+.frequency-item:not([data-dictionary='TMW']) .frequency-value::before {
     display: block;
     position: absolute;
     z-index: 2;
@@ -523,7 +559,7 @@ div#dictionary-entries>div.entry:nth-child(n + 2) .kanji-glyph-data>tbody>tr>* {
 
 /* ========== SHOW KANA SYMBOL ========== */
 
-.frequency-value {
+.frequency-item:not([data-dictionary='TMW']) .frequency-value {
     font-family: 'noka-mono', 'Courier New', monospace;
     position: relative;
     display: inline-block;
@@ -532,7 +568,7 @@ div#dictionary-entries>div.entry:nth-child(n + 2) .kanji-glyph-data>tbody>tr>* {
     white-space: pre;
 }
 
-.frequency-value::before {
+.frequency-item:not([data-dictionary='TMW']) .frequency-value::before {
     font-family: 'noka-mono', 'Courier New', monospace;
     font-weight: 900;
     display: block;

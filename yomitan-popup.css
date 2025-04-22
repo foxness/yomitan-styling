@@ -84,9 +84,9 @@ span.frequency-group-tag:has(span[data-display-value="Student"]) {
     --tag-text-color: white;
 }
 
-/* .frequency-item[data-dictionary='TMW'] .frequency-value:nth-child(n+2) {
+.frequency-item[data-dictionary='TMW'] .frequency-value:nth-child(n+2) {
     display: none;
-} */
+}
 
 /* =============== PITCH DICT COLORS =============== */
 
@@ -594,7 +594,7 @@ div#dictionary-entries>div.entry:nth-child(n + 2) .kanji-glyph-data>tbody>tr>* {
     content: attr(data-frequency);
     width: calc(100% - 24px);
     background-color: var(--background-color);
-    
+
     height: calc(100% - 1px);
     overflow: hidden;
     color: var(--tag-color);
